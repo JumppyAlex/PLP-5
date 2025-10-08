@@ -78,7 +78,7 @@ class Motorcycle(Vehicle):
     def move(self):
         return f"{self.describe()} is riding 🏍️"
 
-# Demonstration
+
 def demonstrate_movement():
     print("=== ANIMAL MOVEMENT ===")
     animals = [
@@ -115,7 +115,7 @@ def demonstrate_movement():
             print(f"  Action: {vehicle.take_off()}")
         print()
 
-# Using polymorphism
+
 def make_them_move(movables):
     print("=== MAKING EVERYTHING MOVE ===")
     for movable in movables:
@@ -124,7 +124,7 @@ def make_them_move(movables):
 if __name__ == "__main__":
     demonstrate_movement()
     
-    # Polymorphism in action
+    
     all_movables = [
         Dog("Rex"),
         Bird("Polly"),
@@ -134,4 +134,5 @@ if __name__ == "__main__":
         Bicycle("Giant", "Road Bike")
     ]
     
+
     make_them_move(all_movables)
